@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo {
+    width: 160px;
+    height: 80px;
+}
+
+header {
+    background-color: white;
+}
+
+body {
+    background-color: #042141;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    font-family: Arial, sans-serif;
+    color: #042141;
+    text-decoration: none;  
+}
