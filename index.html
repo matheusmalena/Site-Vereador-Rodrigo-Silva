@@ -2,35 +2,550 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vereador - Rodrigo Silva</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Olá, eu me chamo Matheus Malena, sou formado em ADS e Desenvolvedora Web Front-End sejam muito Bem-Vindos ao meu Portfólio!">
+
+  <link rel="icon" type="image/png" href="./src/img/math-icon.png" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="./src/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/css/index.css">
+  <link rel="stylesheet" href="./src/css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <title>Matheus Malena</title>
 </head>
 
 <body>
-    <header class="">
-        <div class="d-flex flex-row justify-content-between align-items-center">
-            <img src="./assets/ei_1678373510034-removebg-preview.png" alt="logo" class="logo">
-            <div class="d-flex justify-content-end p-2 g-5">
-                <a href="" class="">Página inicial</a>
-                <a href="" class="">Sobre</a>
-                <a href="" class="">Conquistas</a>
-                <a href="" class="">Reconhecimento</a>
-            </div>
+  <header class="header-content">
+
+    <!--- MENU NAVBAR --->
+    <nav class="nav-bar">
+      <div class="max-width">
+        <div class="logo">
+          <a class="portfolio-title" href="#">Portfo<span>lio.</span></a>
         </div>
-    </header>
 
-    <section>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Início</a></li>
+          <li><a href="#about" class="menu-btn">Sobre mim</a></li>
+          <li><a href="#services" class="menu-btn">Serviços</a></li>
+          <li><a href="#skills" class="menu-btn">Habilidades</a></li>
+          <li><a href="#certificates" class="menu-btn">Conquistas</a></li>
+          <li><a href="#projects" class="menu-btn">Projetos</a></li>
+          <li><a href="#contact" class="menu-btn">Contato</a></li>
+        </ul>
+
+        <!-- icon menu responsive -->
+        <div class="menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
+  <main class="main-content">
+
+    <!--- HOME SECTION --->
+    <section class="home section" id="home">
+      <div class="max-width">
+        <div class="home-content d-flex flex-xl-column">
+
+          <div class="home-icon">
+            <img src="./src/img/img-math.jfif" alt="ícone imagem principal">
+          </div>
+          <div class="flex column">
+            <div class="text-1">Olá Mundo, me chamo</div>
+            <div class="text-2">Matheus Malena</div>
+            <div class="text-3">E eu sou <span class="typing"></span></div>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <a href="https://github.com/matheusmalena" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/matheusmalena/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/eaemalena/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
-    </footer>
+
+    <!--- ABOUT SECTION --->
+    <section class="about section" id="about"
+      aria-label="uma seção falando sobre mim e a minha história na programação.">
+      <div class="max-width" data-aos="fade-down">
+        <h2 class="title">Sobre Mim</h2>
+
+        <div class="about-content">
+          <div class="column left">
+            <img src="./src/img/IMG_6198.jpg" alt="imagem pessoal Roberta Fontes">
+          </div>
+
+          <div class="column right">
+            <div class="text">
+              Salve!
+            </div>
+
+            <p>
+              Muito prazer, eu me chamo Matheus, mas muitas
+              pessoas me conhecem como <span>Malena</span> Sejam muito
+              bem-vindos ao meu portfólio!
+              <br><br>
+              Atualmente, estou cursando Análise e Desenvolvimento de Sistemas
+              e estou no 2º período da faculdade. Minha jornada no mundo da
+              programação começou de forma bastante simples; sempre admirei
+              muito o universo da tecnologia e sempre tive muita curiosidade
+              sobre como os aplicativos e sites eram desenvolvidos, as
+              ferramentas por trás, as animações e tudo mais, sempre me
+              encantou tudo isso.
+              <br><br>
+              A cada dia, fui buscando aprender mais sobre as áreas em que
+              poderia atuar na programação. Como eu tinha mencionado
+              anteriormente, faço ADS, e é uma das áreas que comecei a gostar
+              bastante conforme da diversidade que existe dentro da área de
+              Análise e Desenvolvimento de Sistemas, porém no momento estou
+              estudando por fora a área de Desenvolvimento Web e a cada dia
+              estou me apaixonando pela área.
+              <br><br>
+              No momento, além dos estudos na faculdade, estou buscando
+              conhecimento por conta própria, fazendo cursos gratuitos para
+              complementar e aumentar os meus conhecimentos na área da
+              Tecnologia e utilizando materiais gratuitos, participando de
+              eventos e realizando bootcamps para aprimorar minhas habilidades.
+            </p>
+
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--- SERVICES SECTION --->
+    <section class="services section" id="services" aria-label="uma seção falando dos meus serviços que eu ofereço.">
+      <div id="particles-js"></div>
+      <div class="max-width">
+        <div data-aos="fade-down">
+          <h2 class="title">Serviços</h2>
+        </div>
+
+        <div class="serv-content" data-aos="zoom-in-up">
+
+          <div class="card">
+            <div class="box">
+              <i class="uil uil-brackets-curly"></i>
+              <div class="text">Front-End</div>
+              <p>
+                Desenvolvo interfaces especializados em entregar os sites responsivos,
+                desde a codificação, até a implementação de animações e interações,
+                garantindo uma experiência do usuário fluida e otimizada.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <div class="text">Web Design</div>
+              <p>
+                Ofereço serviços dedicados a criar layouts visualmente agradáveis,
+                funcionais, com as necessidades específicas de cada cliente.
+                Meu objetivo é transformar uma abordagem centrada no usuário,
+                garantindo uma experiência de navegação bem intuitiva.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-bullhorn"></i>
+              <div class="text">Gestão de tráfego</div>
+              <p>
+                Desenvolvo campanhas segmentadas e otimizadas para direcionar tráfego qualificado ao seu negócio,
+                aumentando as conversões e garantindo o uso eficaz de cada investimento em publicidade para impulsionar
+                seu crescimento online.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-icons"></i>
+              <div class="text">Social Media</div>
+              <p>
+                Gerencio redes sociais, crio e administro conteúdo envolvente para aumentar o engajamento e a
+                presença online da sua marca. Com estratégias adaptadas às necessidades do seu negócio, garanto
+                resultados mensuráveis e um retorno significativo sobre o investimento em marketing digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-code"></i>
+              <div class="text">Programação Web</div>
+              <p>
+                Desde do Desenvolvimento Front-end ao Back-end, estou pronto em colocar
+                os meus estudos em prática e poder ir adquirindo conhececimentos para
+                transformar sites eficientes e de alta performance para os usuários.
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--- SKILLS SECTION --->
+    <section class="skills" id="skills" aria-label="uma seção falando das minhas habilidades e estudos até o momento.">
+      <div class="max-width" data-aos="fade-down">
+        <h2 class="title">Habilidades</h2>
+
+        <div class="skills-content">
+          <div class="column left">
+            <div class="text">Minhas habilidades criativas e experiências</div>
+            <p>
+              Gostaria de compartilhar aqui sobre minha trajetória nos estudos da programação até o momento.
+              Embora eu ainda não tenha experiência profissional, tenho me dedicado diariamente para aprimorar minhas
+              habilidades e conhecimentos na área de Desenvolvimento Full-Stack, na qual almejo me especializar.
+              <br>
+              Comecei meus estudos no Front-end, que é a parte visual e interativa dos sites. Estou me aprofundando cada
+              dia mais em tecnologias como HTML, CSS e JavaScript, e atualmente iniciei meus estudos em React. Além
+              disso, estou mergulhando no universo do Front-end e explorando Banco de Dados, que faz parte do Back-end,
+              área que comecei estudar na Faculdade.
+              <br>
+              Estou gostando bastante de poder conhecer aos poucos como funciona por trás de tudo e suas tecnologias.
+              Desde então, meu objetivo é continuar evoluindo e aprendendo cada dia mais que a área do Desenvolvimento
+              Web oferece, para poder colocar meus conhecimentos em prática e continuar aprendendo ainda mais com
+              projetos reais, visando contribuir no mercado de trabalho.
+            </p>
+          </div>
+
+          <div class="column right">
+            <div class="bars">
+              <div class="info">
+                <span>HTML</span>
+                <span>80%</span>
+              </div>
+              <div class="line html"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="line css"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>Bootstrap</span>
+                <span>60%</span>
+              </div>
+              <div class="line bootstrap"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>JavaScript</span>
+                <span>45%</span>
+              </div>
+              <div class="line js"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>Vue</span>
+                <span>35%</span>
+              </div>
+              <div class="line vue"></div>
+            </div>
+
+            <div class="bars">
+              <div class="info">
+                <span>SQL</span>
+                <span>40%</span>
+              </div>
+              <div class="line sql"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--- CERTIFICATES SECTION --->
+    <section class="conquest section" id="certificates"
+      aria-label="uma seção mostrando os meus certificados do meu aprendizado.">
+      <div class="max-width" data-aos="fade-down">
+        <div>
+          <h2 class="title">Minhas Conquistas</h2>
+        </div>
+
+        <div class="carousel owl-carousel">
+          <div class="card">
+            <a href="https://cursos.alura.com.br/degree/certificate/1244f4a2-7b6b-4cfa-a0e9-7a07bed262bb"><img
+                src="./src/img/certificado-html.png" alt="Certificado HTML"></a>
+          </div>
+
+          <div class="card">
+            <a href="https://cursos.alura.com.br/degree/certificate/f36bf34c-fd7e-4326-9d59-45b03c4ff385"><img
+                src="./src/img/certificado-js.png" alt="Certificado DESENVOLVA APLICAÇÕES WEB COM JAVASCRIPT"></a>
+          </div>
+
+          <div class="card">
+            <a href="https://cursos.alura.com.br/certificate/e77a674a-4527-4715-95a4-71b145fce611"><img
+                src="./src/img/certificado-git.png"
+                href="https://cursos.alura.com.br/certificate/e77a674a-4527-4715-95a4-71b145fce611"
+                alt="GIT E GITHUB: REPOSITÓRIO, COMMIT E VERSÕES"></a>
+          </div>
+
+          <div class="card">
+            <a href="https://cursos.alura.com.br/degree/certificate/6f36049a-25b7-4b6a-ab98-42e3324faa3a"><img
+                src="./src/img/certificado-linux.png" alt="Certificado Linux"></a>
+          </div>
+
+          <div class="card">
+            <a href="https://cursos.alura.com.br/degree/certificate/4a40261c-7c41-476f-8397-b67c1b830da0"><img
+                src="./src/img/certificado-bootstrap.png" alt="Certificado Bootstrap"></a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://cursos.alura.com.br/certificate/matheus-tew-one/arquitetura-computadores-funcionamento-programa"><img
+                src="./src/img/certificado-pc-funcionavel.png" alt="Certificado ARQUITETURA DE COMPUTADORES"></a>
+          </div>
+
+          <div class="card">
+            <a href="https://cursos.alura.com.br/certificate/df42bfc0-c7d5-4cf4-b7a5-7e768eb1c281"><img
+                src="./src/img/certificado-dns.png" alt="Certificado DNS"></a>
+          </div>
+
+          <div class="card">
+            <a href="https://cursos.alura.com.br/certificate/matheus-tew-one/logica-programacao-javascript-html"><img
+                src="./src/img/certificado-jogo.png" alt="Certificado HTML"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--- PROJECTS SECTION --->
+    <section class="portfolio section" id="projects"
+      aria-label="uma seção mostrando os principais projetos do meu Github.">
+      <div class="max-width" data-aos="fade-down">
+        <h2 class="title">Projetos</h2>
+        <div class="portfolio-container swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <!-- project 01 -->
+            <div class="portfolio-content swiper-slide">
+              <img src="./src/img/previsao-web.png" class="portfolio-img" alt="projeto lista de tarefas">
+              <div>
+                <h3 class="portfolio-title">Previsão do Tempo Website</h3>
+                <p class="portfolio-description">
+                  Uma página de previsão de tempo com um API integrada a OpenWeather em JavaScript.
+                </p>
+                <a href="https://matheusmalena.github.io/AppPrevisaoDoTempo/" target="_blank" class="portfolio-button">
+                  View <i class="uil uil-arrow-right button-icon"></i></a>
+              </div>
+            </div>
+
+            <!-- project 02 -->
+            <div class="portfolio-content swiper-slide">
+              <img src="./src/img/fokus.png" class="portfolio-img" alt="projeto yoga website">
+              <div>
+                <h3 class="portfolio-title">Fokus Website</h3>
+                <p class="portfolio-description">
+                  Um sistema de temporizador, que ajuda a pessoa usuária a focar nas suas atividades do dia a dia.
+                </p>
+                <a href="https://matheusmalena.github.io/Fokus/" target="_blank" class="portfolio-button"> View <i
+                    class="uil uil-arrow-right button-icon"></i></a>
+              </div>
+            </div>
+
+
+            <!-- project 03 -->
+            <div class="portfolio-content swiper-slide">
+              <img src="./src/img/cookin-up.jpeg" class="portfolio-img" alt="card light/dark mode">
+              <div>
+                <h3 class="portfolio-title">Cookin Up</h3>
+                <p class="portfolio-description">
+                  Uma site para você explorar novas receitas todos os dias com os ingredientes que estão ao seu alcance!
+                </p>
+                <a href="https://cookin--up.vercel.app/" target="_blank" class="portfolio-button"> View
+                  <i class="uil uil-arrow-right button-icon"></i></a>
+              </div>
+            </div>
+
+            <!-- project 04 -->
+            <div class="portfolio-content swiper-slide">
+              <img src="./src/img/jogonumero.png" class="portfolio-img" alt="card light/dark mode">
+              <div>
+                <h3 class="portfolio-title">Jogo Advinha Número - Voz</h3>
+                <p class="portfolio-description">
+                  Um jogo onde você tem que advinhar um número secreto através de sua voz.
+                </p>
+                <a href="https://jogo-numero-secreto-voz-three.vercel.app/" target="_blank" class="portfolio-button">
+                  View
+                  <i class="uil uil-arrow-right button-icon"></i></a>
+              </div>
+            </div>
+
+
+
+            <!-- project 05 -->
+            <div class="portfolio-content swiper-slide">
+              <img src="./src/img/cafe.png" class="portfolio-img" alt="card light/dark mode">
+              <div>
+                <h3 class="portfolio-title">Cafeteria - Landing Page</h3>
+                <p class="portfolio-description">
+                  Uma landing page de uma cafeteria moderna.
+                </p>
+                <a href="https://matheusmalena.github.io/landing-page_cafeteria/" target="_blank"
+                  class="portfolio-button"> View
+                  <i class="uil uil-arrow-right button-icon"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--- CONTACT SECTION --->
+    <section class="contact section" id="contact"
+      aria-label="uma seção falando se interessou com o meu trabalho, entrar em contato.">
+      <div class="max-width">
+        <div data-aos="fade-down">
+          <h2 class="title">Contato</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="column left" data-aos="fade-down">
+            <div class="text">Se Interessou?</div>
+
+            <p>Obrigado por ter chegado até aqui e ter conhecido um pouco da minha trajetória.
+              Seria um prazer poder compartilhar mais sobre mim e adquirir experiência enfrentando desafios no
+              Desenvolvimento Web. Tenho o interesse também de explorar novas áreas no campo da programação. Se você
+              estiver em busca de alguém dedicado, fome por aprendizado e que deseja crescer junto à sua empresa,
+              ficaria honrada em ter essa oportunidade. Sinta-se à vontade para entrar em contato e juntos
+              transformarmos ideias em realidade.</p>
+
+            <div class="icons">
+              <div class="row info-icons">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">Nome</div>
+                  <div class="sub-title">Matheus Malena</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Endereço</div>
+                  <div class="sub-title">Peruibe - SP</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="sub-title">matheusmalena28@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column right" data-aos="fade-up">
+            <div class="text">Fale comigo</div>
+
+            <form action="https://formsubmit.co/matheusmalena28@gmail.com" method="POST" class="input-area">
+              <div class="fields">
+                <div class="field ">
+                  <input type="text" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="field number">
+                  <input type="tel" name="numero" placeholder="Numero" required>
+                </div>
+              </div>
+              <div class="field email">
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="field">
+                <input type="text" name="assunto" placeholder="Assunto" required>
+              </div>
+              <div class="textarea">
+                <textarea cols="30" rows="10" name="mensagem" placeholder="Mensagem" required></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Enviar</button>
+              </div>
+              <input type="hidden" name="_subject" value="New submission!">
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!--- FOOTER --->
+  <footer>
+    <span>Desenvolvido por <a href="#">Matheus Malena</a> | <span class="far fa-copyright"></span><span> 2024 todos os
+        direitos reservados</span>
+  </footer>
+
+
+  <!--- SCROLL UP --->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up"></i>
+  </a>
+
+
+  <!--- PARTICLES JS --->
+  <script src="./src/js/particles.js"></script>
+  <script src="./src/js/app-particles.js"></script>
+
+  <!--- SWIPER JS --->
+  <script src="./src/js/swiper-bundle.min.js"></script>
+
+  <!--- MAIN JS --->
+  <script src="./src/js/main.js"></script>
+
+  <!--- SCRIPT ANIMATION --->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1800,
+    });
+  </script>
 
 </body>
 

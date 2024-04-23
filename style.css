@@ -1,27 +1,219 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  /* ============= VARIABLES CSS ============= */
+:root {
+    --first-color: 042141;
+    --color-purple-light: #f7b21d;
+    --color-white-pink: white;
 }
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* script js sticky*/
+  .nav-bar.sticky {
+    padding: 15px 0;
+    background: var(--first-color);
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+  
+  .nav-bar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--first-color); 
+  }
+
+  .nav-bar .logo a span {
+    transition: all 0.3s ease;
+  }
+  
+  /* script js sticky */
+  .nav-bar.sticky .logo a span {
+    color: var(--color-white-pink);
+  }
+  
+  .nav-bar .menu li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .nav-bar .menu li a {
+    display: block;
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .nav-bar .menu li a:hover {
+    color: var(--color-purple-light);
+  }
+  
+  /* script js sticky */
+  .nav-bar.sticky .menu li a {
+    color: var(--color-white);
+  }
+  
+  .nav-bar.sticky .menu li a:hover {
+    color: var(--color-white-pink);
+  }
+  
+  /* icon menu responsive */
+  .menu-btn {
+    color: var(--color-white);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+  }
 
 
 .logo {
-    width: 160px;
-    height: 80px;
-}
-
-header {
-    background-color: white;
-}
-
-body {
-    background-color: #042141;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    width: 200px;
+    height: 100px;
+    text-decoration: none;
+  }
 
 header a {
     font-family: Arial, sans-serif;
     color: #042141;
     text-decoration: none;  
 }
+
+/* ============= ABOUT SECTION/ALL SIMILIAR STYLING ============= */
+section {
+    padding: 100px 0;
+  }
+  
+  .about,
+  .services,
+  .skills,
+  .conquest,
+  .portfolio,
+  .contact,
+  footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--first-color); 
+  }
+  
+  .about .about-content,
+  .services .serv-content,
+  .skills .skills-content,
+  .contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .services .serv-content {
+    justify-content: space-evenly;
+  }
+  
+  section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: var(--color-black);
+    transform: translateX(-50%);
+  }
+  
+  section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--first-color);
+    padding: 5px;
+    background: var(--color-white);
+    transform: translateX(-50%);
+  }
+  
+  .about .title::after {
+    background: var(--clean-white-purple);
+    content: "minha história";
+    white-space: nowrap;
+  }
+  
+  .about .about-content .left {
+    width: 40%;
+  }
+  
+  .about .about-content .left img {
+    height:360px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 100%; 
+    border: 1px solid transparent;
+  }
+  
+  .about .about-content .right {
+    width: 40%;
+  }
+  
+  .about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .about .about-content .right .text span {
+    color: var(--first-color);
+  }
+  
+  span {
+    color: var(--first-color);
+  }
+  
+  .about .about-content .right p {
+    text-align: justify;
+  }
+  
+  .about .about-content .right p {
+    text-align: justify;
+  }
+  
+  .about .about-content .right a {
+    display: inline-block;
+    background: var(--first-color);
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 2px solid var(--first-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .about .about-content .right a:hover {
+    color: var(--first-color);
+    background: none;
+  }
