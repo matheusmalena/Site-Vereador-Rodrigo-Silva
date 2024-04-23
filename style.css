@@ -17,6 +17,8 @@ html {
   --first-color: #042141;
   --color-orange-light: #f7b21d;
   --color-white-pink: white;
+  --clean-white-purple: rgb(70, 130, 180);
+  --color-white-2: rgb(171,219,227);
 }
 
 
@@ -40,9 +42,10 @@ html {
 /* script js sticky*/
 .nav-bar.sticky {
   padding: 15px 0;
-  background: var(--first-color);
+  color: var(--first-color);
+  background: var(--color-white-pink);
   z-index: 999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
 
 .nav-bar .max-width {
@@ -81,11 +84,11 @@ html {
 
 /* script js sticky */
 .nav-bar.sticky .menu li a {
-  color: var(--color-white);
+  color: var(--first-color);
 }
 
 .nav-bar.sticky .menu li a:hover {
-  color: var(--color-white-pink);
+  color: var(--first-color);
 }
 
 /* icon menu responsive */
@@ -103,7 +106,7 @@ html {
   background: url("./assets/peruibe.jpg") top no-repeat;
   background-size: cover;
   color: var(--color-white);
-  height: 50vh;
+  height: 80vh;
   min-height: 500px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -631,11 +634,20 @@ span {
 
 .contact .contact-content .left .icons {
   margin: 10px 0;
+  padding: 5px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
 }
 
 .contact .contact-content .right {
   margin-bottom: 210px;
 }
+
 
 .contact .contact-content .row {
   display: flex;
