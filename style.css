@@ -18,7 +18,7 @@ html {
   --color-orange-light: #f7b21d;
   --color-white-pink: white;
   --clean-white-purple: rgb(70, 130, 180);
-  --color-white-2: rgb(171,219,227);
+  --color-white-2: rgb(171, 219, 227);
 }
 
 
@@ -53,6 +53,7 @@ html {
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
   width: 200px;
   height: 100px;
@@ -149,7 +150,7 @@ html {
   font-weight: 500;
 }
 
-.about-content span{
+.about-content span {
   font-weight: bold;
 }
 
@@ -188,7 +189,7 @@ section {
 .contact,
 footer {
   font-family: 'Poppins', sans-serif;
-  background: var(--clean-white-purple); 
+  background: var(--clean-white-purple);
 }
 
 .about .about-content,
@@ -248,10 +249,10 @@ section .title::after {
 }
 
 .about .about-content .left img {
-  height:360px;
+  height: 360px;
   width: 360px;
   object-fit: cover;
-  border-radius: 80%; 
+  border-radius: 80%;
   margin: 0;
   border: 1px solid transparent;
 }
@@ -311,27 +312,27 @@ span {
 .services #particles-js {
   position: absolute;
   width: 100%;
-  height: 85vh; 
+  height: 85vh;
 
 }
 
 .services .title::before,
 .conquest .title::before,
-.contact  .title::before {
+.contact .title::before {
   background: var(--color-white);
 }
 
 .services .title::after {
   background: var(--color-black);
-  content: "o que forneço";
+  content: "para cidade";
   color: var(--color-orange-light);
   white-space: nowrap;
 }
 
 .services .serv-content .card {
   width: calc(33% - 20px);
-  height: 360px;
-  background: var(--color-black-clean);
+  height: 320px;
+  background: var(--first-color);
   text-align: center;
   border-radius: 30px;
   padding: 25px 25px;
@@ -637,7 +638,7 @@ span {
   padding: 5px;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -653,7 +654,7 @@ span {
   display: flex;
   height: 65px;
   align-items: center;
- }
+}
 
 .contact .contact-content .row .info {
   margin-left: 25px;
@@ -712,7 +713,7 @@ span {
 .contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
-  border: 2px solid var(--clean-light-gray); 
+  border: 2px solid var(--clean-light-gray);
   border-radius: 10px;
   outline: none;
   padding: 0 15px;
@@ -752,7 +753,7 @@ span {
 
 /* ============= FOOTER ============= */
 footer {
-  background: var(--color-black-clean); 
+  background: var(--color-black-clean);
   padding: 17px 23px;
   color: var(--color-white);
   text-align: center;
@@ -809,4 +810,80 @@ footer span a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
+}
+
+.box-personalizado {
+  width: 500px;
+}
+
+.card-personalizado {
+  width: 800px;
+  height: 360px;
+  background: var(--color-black-clean);
+  text-align: center;
+  border-radius: 30px;
+  padding: 25px 25px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  align-items: center;
+  transition: all .50s ease;
+  z-index: 50;
+  margin: 15px 0px;
+}
+
+.card-personalizado2 {
+  width: 800px;
+  height: 360px;
+  background: var(--first-color);
+  text-align: center;
+  border-radius: 30px;
+  padding: 25px 25px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  opacity: 85%;
+  align-items: center;
+  transition: all .50s ease;
+  z-index: 50;
+  margin: 15px 0px;
+}
+
+.card-padrao-color2 {
+  width: calc(33% - 20px);
+  height: 320px;
+  background: var(--color-orange-light);
+  text-align: center;
+  border-radius: 30px;
+  padding: 25px 25px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: #042141;
+  transition: all .50s ease;
+  z-index: 50;
+  margin: 15px 0px;
+}
+
+.card-big-color2{
+  width: 1000px;
+  height: 340px;
+  background: var(--color-orange-light);
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  align-items: center;
+  transition: all .50s ease;
+  z-index: 50;
+  color: #042141;
+  margin: 15px 0px;
+}
+
+.img-card {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.w-500 {
+  width: 965px;
 }
