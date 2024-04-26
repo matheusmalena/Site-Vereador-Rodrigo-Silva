@@ -15,7 +15,8 @@ html {
 
 :root {
   --first-color: #042141;
-  --color-orange-light: #f7b21d;
+  --color-orange-light: #f7b933
+  ;
   --color-white-pink: white;
   --clean-white-purple: rgb(70, 130, 180);
   --color-white-2: rgb(171, 219, 227);
@@ -267,6 +268,11 @@ section .title::after {
   margin-bottom: 10px;
 }
 
+.text-video{
+  font-size: 30px;
+  font-weight: 800;
+}
+
 .about .about-content .right .text span {
   color: var(--first-color);
 }
@@ -329,9 +335,10 @@ span {
   white-space: nowrap;
 }
 
+/* ============= SERVICES SECTION ============= */
 .services .serv-content .card {
   width: calc(33% - 20px);
-  height: 320px;
+  height: auto; /* Alterado para 'auto' para permitir que a altura seja ajustada proporcionalmente */
   background: var(--first-color);
   text-align: center;
   border-radius: 30px;
@@ -341,6 +348,9 @@ span {
   transition: all .50s ease;
   z-index: 50;
   margin: 15px 0px;
+  display: flex; /* Adicionado para usar flexbox */
+  flex-direction: column; /* Adicionado para organizar os itens verticalmente */
+  justify-content: center; /* Adicionado para centralizar os itens verticalmente */
 }
 
 .services .serv-content .card:hover {
@@ -350,6 +360,10 @@ span {
 
 .services .serv-content .card .box {
   transition: all 0.3s ease;
+}
+
+.services .serv-content .card .box {
+  flex-grow: 1; /* Adicionado para que o conteúdo se expanda verticalmente */
 }
 
 
@@ -371,11 +385,16 @@ span {
   color: var(--color-clean-white);
 }
 
+.services .serv-content .card .img-card {
+  max-width: 100%; /* Adicionado para que a imagem não ultrapasse o tamanho do card */
+  height: auto; /* Adicionado para permitir que a altura seja ajustada proporcionalmente */
+}
+
 
 /* ============= SKILLS SECTION ============= */
 .skills .title::after {
   background: var(--clean-white-purple);
-  content: "o que eu sei";
+  content: "Transparencia";
   white-space: nowrap;
 }
 
@@ -657,7 +676,7 @@ span {
 }
 
 .contact .contact-content .row .info {
-  margin-left: 25px;
+  margin-left: 0;
 }
 
 .contact .contact-content .row i {
@@ -862,7 +881,7 @@ footer span a:hover {
   margin: 15px 0px;
 }
 
-.card-big-color2{
+.card-big-color2 {
   width: 1000px;
   height: 340px;
   background: var(--color-orange-light);
@@ -879,11 +898,97 @@ footer span a:hover {
 }
 
 .img-card {
-  width: 320px;
+  width: 300px;
   height: auto;
   border-radius: 10px;
 }
 
-.w-500 {
-  width: 965px;
+.img-card-big {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 1200px;
+  padding: 20px;
+}
+
+.counter-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 150px;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 8px;
+}
+
+.counter-number {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.counter-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dados{
+  background-color: rgba(4, 33, 65, 0.98);;
+  
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.video-principal {
+  height: 40rem;
+  border-radius: 20px;
+}
+
+.control-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.control-bar button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sub-title-video{
+  font-family: 'Poppins';
+  font-size: 21px;
+  font-weight: 400px;
+}
+
+.margin-10{
+  margin-right: 5rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Ajuste conforme necessário */
 }

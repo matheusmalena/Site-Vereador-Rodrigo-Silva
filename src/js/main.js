@@ -67,20 +67,20 @@ var swiper = new Swiper(".mySwiper", {
   keyboard: true,
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   $(".carousel").owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-      0:{
-        items:1
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
       },
-      600:{
-        items:2
+      600: {
+        items: 2
       },
-      1000:{
-        items:4
+      1000: {
+        items: 4
       }
     }
   });
@@ -88,14 +88,36 @@ $(document).ready(function(){
 
 
 // SHOW SCROLL UP
-function scrollUp(){
+function scrollUp() {
   const scrollUp = document.getElementById('scroll-up');
 
-  if (this.scrollY >= 1000) 
-      scrollUp.classList.add('show-scroll')
+  if (this.scrollY >= 1000)
+    scrollUp.classList.add('show-scroll')
   else
     scrollUp.classList.remove('show-scroll')
 }
- 
+
 window.addEventListener('scroll', scrollUp);
 
+const counters = document.querySelectorAll('.counter-number');
+
+counters.forEach((counter) => {
+  const target = counter.getAttribute('data-target');
+  let currentCount = 0;
+
+  setInterval(() => {
+    if (currentCount < target) {
+      currentCount++;
+      counter.textContent = currentCount;
+    }
+  }, 10);
+});
+
+function toggleSound() {
+  var video = document.getElementById("video");
+  if (video.muted) {
+    video.muted = false;
+  } else {
+    video.muted = true;
+  }
+}
