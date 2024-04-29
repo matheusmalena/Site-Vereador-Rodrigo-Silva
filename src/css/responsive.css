@@ -110,6 +110,11 @@
         width: 100%;
         margin-bottom: 35px;
     }
+
+    .home{
+        min-height: 500px;
+    }
+
 }
 
 
