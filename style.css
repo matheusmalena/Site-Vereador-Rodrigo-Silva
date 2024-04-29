@@ -16,7 +16,7 @@ html {
 :root {
   --first-color: #042141;
   --color-orange-light: #f7b933
-  ;
+  --color-white: white;
   --color-white-pink: white;
   --clean-white-purple: rgb(70, 130, 180);
   --color-white-2: rgb(171, 219, 227);
@@ -99,6 +99,14 @@ html {
   font-size: 23px;
   cursor: pointer;
   display: none;
+}
+
+.fa{
+  color: var(--first-color);
+}
+
+.fa-bars::before{
+  background-color: #fff;
 }
 
 
@@ -923,13 +931,14 @@ footer span a:hover {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 50px;
+  width: 60%;
   height: 150px;
   color: #fff;
-  padding: 15px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   flex: 1;
-  margin: 0 10px;
+  margin: 10px 10px;
   border-radius: 8px;
 }
 
