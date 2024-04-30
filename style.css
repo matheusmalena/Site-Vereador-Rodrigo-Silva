@@ -15,7 +15,7 @@ html {
 
 :root {
   --first-color: #042141;
-  --color-orange-light: #f7b933
+  --color-orange-light: #e9aa24;
   --color-white: white;
   --color-white-pink: white;
   --clean-white-purple: rgb(70, 130, 180);
@@ -397,6 +397,21 @@ span {
   max-width: 100%; /* Adicionado para que a imagem não ultrapasse o tamanho do card */
   height: auto; /* Adicionado para permitir que a altura seja ajustada proporcionalmente */
 }
+
+.services{
+  background: rgba(233, 170, 36, 0.85) !important;
+}
+
+.services .title{
+  color: black;
+}
+
+.services .title::after{
+  color: var(--first-color);
+  background: rgba(233, 170, 36, 0.85) !important;
+}
+
+
 
 
 /* ============= SKILLS SECTION ============= */
@@ -960,13 +975,12 @@ footer span a:hover {
 
 .video-container {
   position: relative;
-  width: 100%;
+  width: 50%;
 }
 
 .video-principal {
-  width: 100%;
   height: 40rem;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .control-bar {
