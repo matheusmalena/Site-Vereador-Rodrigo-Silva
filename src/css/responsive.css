@@ -115,6 +115,13 @@
         min-height: 500px;
     }
 
+    .sub-title-video{
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 400px;
+        width: 80% !important;
+      }
+
 }
 
 
