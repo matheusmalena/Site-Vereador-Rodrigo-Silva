@@ -122,6 +122,22 @@
         width: 80% !important;
       }
 
+      section .title{
+        font-size: 28px;
+      }
+
+      .conquest .title::after {
+        content: "vereador mais atuante";
+        color: var(--color-orange-light);
+        background: var(--color-black);
+        white-space: nowrap;
+        font-size: 16px;
+      }
+
+      .conquest .title::before{
+        width: 80%;
+      }
+
 }
 
 

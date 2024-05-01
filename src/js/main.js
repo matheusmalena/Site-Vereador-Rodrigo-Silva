@@ -14,19 +14,6 @@ $(document).ready(function () {
     $('.menu-btn i').toggleClass('active');
   });
 
-  // typing animation
-  var typed = new Typed('.typing', {
-    strings: [
-      'Analista de Sistemas',
-      'Desenvolvedor Web',
-      'Gestor de tráfego',
-      'Surfista nas horas vagas',
-    ],
-    typeSpeed: 100,
-    backSpeed: 70,
-    loop: true,
-  });
-
   // owl carousel
   $('.carousel').owlCarousel({
     margin: 20,

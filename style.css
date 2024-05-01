@@ -337,6 +337,10 @@ span {
   background: var(--color-white);
 }
 
+.conquest .title::before{
+  width: 30%;
+}
+
 .services .title::after {
   background: var(--color-black);
   content: "para cidade";
@@ -503,10 +507,11 @@ span {
 }
 
 .conquest .title::after {
-  content: "certificados";
+  content: "vereador mais atuante";
   color: var(--color-orange-light);
   background: var(--color-black);
   white-space: nowrap;
+  font-size: 24px;
 }
 
 .conquest .carousel .card {
@@ -802,15 +807,21 @@ footer {
   text-align: center;
 }
 
+footer span{
+  color: var(--color-white);
+}
+
 footer span a {
-  color: var(--color-orange-light);
+  color: var(--clean-white-purple);
   text-decoration: none;
 
 }
 
 footer span a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--color-orange-light);
 }
+
 
 
 /* ============= SCROLL UP ============= */
@@ -988,4 +999,14 @@ footer span a:hover {
   display: flex;
   align-items: center;
   margin-right: 20px; /* Ajuste conforme necessário */
+}
+
+.text-certificados{
+  color: var(--color-white);
+  text-align: center;
+}
+
+.certificado-02{
+  width: 40%;
+  height: 40%;
 }
